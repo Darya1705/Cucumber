@@ -15,7 +15,7 @@ public class TransferPage {
 
     public DashboardPage transferMoney(int amount, String cardInfo) {
         amountField.setValue(String.valueOf(amount));
-        fromField.setValue(cardInfo);//.getCardNumber()
+        fromField.setValue(cardInfo);
         transferButton.click();
         return new DashboardPage();
     }

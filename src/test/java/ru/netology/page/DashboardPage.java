@@ -17,7 +17,6 @@ public class DashboardPage {
     private SelenideElement buttonSecondCard = $("[data-test-id='0f3f5c2a-249e-4c3d-8287-09f7a039391d'] button");
     private final SelenideElement buttonReload = $("[data-test-id=\"action-reload\"]");
 
-
     public DashboardPage() {
         headingPage.shouldBe(visible);
     }
@@ -53,5 +52,8 @@ public class DashboardPage {
         $("[data-test-id='" + cardId + "'] [data-test-id=action-deposit]").click();
         return new TransferPage();
     }
-}
 
+    public int getCardBalance(String cardId) {
+        return extractBalance($("[data-test-id='" + cardId + "']").getText());
+    }
+}

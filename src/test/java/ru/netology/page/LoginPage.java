@@ -13,11 +13,11 @@ public class LoginPage {
     private final SelenideElement cardButton = $("[data-test-id=action-deposit]");
 
 
-  //  public VerificationPage login(DataHelper.AuthInfo info) {
-    //    loginField.setValue(info.getLogin());
-      //  passwordField.setValue(info.getPassword());
-    //    loginButton.click();
-      //  return new VerificationPage();
+ //   public VerificationPage validLogin(String login, String password) {
+   //     loginField.setValue(info.getLogin());
+     //   passwordField.setValue(info.getPassword());
+       // loginButton.click();
+        //return new VerificationPage();
     //}
 
     public static VerificationPage validLogin(String login, String password) {

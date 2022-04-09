@@ -17,5 +17,6 @@ public class VerificationPage {
         codeField.setValue(verificationCode);
         verifyButton.click();
         return new DashboardPage();
+
     }
 }
